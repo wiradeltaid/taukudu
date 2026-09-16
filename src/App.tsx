@@ -177,21 +177,21 @@ export function App() {
   const [newBlacklistDomain, setNewBlacklistDomain] = useState('')
 
   // Duplicates state
-  const [dupDir, setDupDir] = useState<string>('D:\\Developer\\wiradigital.id\\taukudu')
+  const [dupDir, setDupDir] = useState<string>('D:\\Developer\\wiradeltaid\\taukudu')
   const [dupScanning, setDupScanning] = useState(false)
   const [dupResult, setDupResult] = useState<DuplicateScanResult | null>(null)
   const [selectedDupPaths, setSelectedDupPaths] = useState<Set<string>>(new Set())
   const [dupStatus, setDupStatus] = useState<string | null>(null)
 
   // Empty Folders state
-  const [emptyFolderDir, setEmptyFolderDir] = useState<string>('D:\\Developer\\wiradigital.id\\taukudu')
+  const [emptyFolderDir, setEmptyFolderDir] = useState<string>('D:\\Developer\\wiradeltaid\\taukudu')
   const [emptyFolderScanning, setEmptyFolderScanning] = useState(false)
   const [emptyFolderResult, setEmptyFolderResult] = useState<EmptyFolderScanResult | null>(null)
   const [selectedEmptyFolderPaths, setSelectedEmptyFolderPaths] = useState<Set<string>>(new Set())
   const [emptyFolderFeedback, setEmptyFolderFeedback] = useState<string | null>(null)
 
   // Large Files state
-  const [largeFilesDir, setLargeFilesDir] = useState<string>('D:\\Developer\\wiradigital.id\\taukudu')
+  const [largeFilesDir, setLargeFilesDir] = useState<string>('D:\\Developer\\wiradeltaid\\taukudu')
   const [largeFilesMinSize, setLargeFilesMinSize] = useState<number>(52_428_800) // 50MB default
   const [largeFilesScanning, setLargeFilesScanning] = useState(false)
   const [largeFilesResult, setLargeFilesResult] = useState<LargeFileScanResult | null>(null)
@@ -4728,7 +4728,7 @@ export function App() {
                 <p className="text-xs text-zinc-500">Released under the MIT License • Built for precision and performance.</p>
               </div>
               <a
-                href="https://github.com/wiradigitalid/taukudu"
+                href="https://github.com/wiradeltaid/taukudu"
                 target="_blank"
                 rel="noreferrer"
                 className="px-4 py-2 rounded-xl bg-white/[0.05] hover:bg-white/[0.08] text-zinc-200 text-xs font-semibold flex items-center gap-2 transition cursor-pointer"

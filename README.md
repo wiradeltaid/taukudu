@@ -3,7 +3,7 @@
 Windows system cleaner and optimizer, in active development. No release yet.
 
 taukudu is a port of [Kudu](https://github.com/AdventDevInc/kudu) by Advent Development Inc,
-built by Wira Digital Indonesia on Tauri + React/TypeScript.
+built by Wira Delta Indonesia on Tauri + React/TypeScript.
 
 ## Credit
 

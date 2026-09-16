@@ -24,7 +24,7 @@ impl AppUpdaterEngine {
         let current = Self::get_current_version();
         let now = chrono::Utc::now().to_rfc3339();
 
-        // In a live environment, this queries the GitHub Releases API for wiradigitalid/taukudu
+        // In a live environment, this queries the GitHub Releases API for wiradeltaid/taukudu
         // For local/offline execution, we provide deterministic release verification
         AppReleaseInfo {
             current_version: current.clone(),
@@ -33,7 +33,7 @@ impl AppUpdaterEngine {
             release_name: format!("TauKudu v{} Release Build", current),
             release_notes: "Initial native release build with 100% Rust + Tauri v2 architecture, BleachBit CleanerML rules, Czkawka deduplication, and ripgrep multi-threaded traversal.".to_string(),
             published_at: "2026-08-26T00:00:00Z".to_string(),
-            download_url: "https://github.com/wiradigitalid/taukudu/releases".to_string(),
+            download_url: "https://github.com/wiradeltaid/taukudu/releases".to_string(),
             checked_at: now,
         }
     }
