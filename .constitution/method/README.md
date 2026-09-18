@@ -29,8 +29,9 @@ Never a rule. When it disagrees with a guide, the guide wins and the disagreemen
 
 | File | Opened when |
 |---|---|
-| [`why/README.md`](why/README.md) | You want the whole shape in five minutes — five gates, two settings, fifteen skills, WDI ↔ BMad |
+| [`why/README.md`](why/README.md) | You want the whole shape in five minutes — five gates, two settings, eighteen skills, WDI ↔ BMad |
 | [`why/artifact-map.md`](why/artifact-map.md) | "Where does this file go", or "does this document exist at my `mode`" |
+| [`why/mode-risk-map.md`](why/mode-risk-map.md) | A `mode` and a `risk_accepted` are set and you want the two side by side — all twelve cells |
 | [`why/rationale.md`](why/rationale.md) | Before changing a rule, to know what you would break |
 | [`why/portability.md`](why/portability.md) | Which files are the method and which are the product; how promote and install move them |
 
@@ -42,6 +43,7 @@ Never a rule. When it disagrees with a guide, the guide wins and the disagreemen
 | [`language-guide.md`](language-guide.md) | Naming anything — a code identifier, a code file, a document file |
 | [`method-glossary.md`](method-glossary.md) | Unsure what a method term means — layer, wave, Product Component, ID code |
 | [`structure-guide.md`](structure-guide.md) | Writing or checking the two structure maps in `.control/` |
+| [`ci-guide.md`](ci-guide.md) | Writing or changing a CI workflow; when a push may start a cloud run, and what MUST NOT |
 
 ## `document/` — document rules
 
