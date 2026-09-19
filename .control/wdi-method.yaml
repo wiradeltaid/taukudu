@@ -1,6 +1,6 @@
 # Written by wdi-method install/update. A trace, not a lockfile.
-wdi_method: 0.6.23
+wdi_method: 0.6.25
 bmad_method: 6.11.0
 engines:
   source: none   # none in this repo — G5 cannot run until they are installed
-installed_at: 2026-09-18
+installed_at: 2026-09-19
