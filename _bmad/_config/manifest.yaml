@@ -20,5 +20,5 @@ modules:
 ides:
   - claude-code
   - codex
-  - cursor
+
 
