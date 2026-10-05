@@ -1,18 +1,46 @@
 ---
-status: Draft            # Article 4: Draft MAY be read as guidance, MUST NOT reject a change
-ratified_by: null        # the commit whose content ratifies this file
+status: Accepted
+ratified_by: 5903b59
+playbook:
+  repo: wiradeltaid/ops
+  path: research/wdi-ecosystem-strategy/coding-playbook/
+  local: D:\Developer\wiradeltaid\ops\research\wdi-ecosystem-strategy\coding-playbook\
+  rev: 5903b59
+reads:
+  - 01-principles.md
+  - 02-architecture-and-structure.md
+  - 03-essential-conventions.md
+  - 04-file-size-and-cohesion.md
+  - 06-tooling-and-ratchet.md
+  - 07-ui-architecture-and-design-system.md
+  - stack/rust.md
+  - stack/react-typescript.md
+excludes:
+  - stack/go.md
+  - stack/slint.md
+  - stack/kotlin.md
+  - stack/python.md
+  - 05-realtime-and-sync-protocols.md
 ---
 
 # stack — codebase guide
 
 **Loaded when:** writing or reviewing code.
 
-> **Born empty on purpose.** This file is filled by the first wave's distillation — `bmad-spec`'s
-> `stack.md` companion is promoted here before the wave closes.
->
-> Writing it up front means guessing at a convention no code has yet. It MUST NOT be filled before
-> code exists that ratifies it.
+## 1. Toolchains & Runtimes
 
-> **Status.** While `draft`, its contents MAY be read as guidance but MUST NOT be used to reject a
-> change. It rises to `accepted` when the first wave's distillation fills it from real code, and
-> `ratified_by` MUST then carry the commit holding that code.
+- **Desktop Shell & Backend:** Rust (Tauri v2) di `src-tauri/`.
+- **Frontend UI:** React 19 / TypeScript 5 + Vite di `src/`.
+- **Styling:** CSS Semantic Tokens & Tailwind CSS.
+
+## 2. Command Verifikasi
+
+```powershell
+# Frontend
+npm run build
+npm run lint
+
+# Tauri / Rust
+cargo clippy --manifest-path src-tauri/Cargo.toml -- -D warnings
+cargo test --manifest-path src-tauri/Cargo.toml
+```
